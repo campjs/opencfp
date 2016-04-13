@@ -1,16 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+
+@font-face {
+  font-family: SG;
+  src: url(http://vii.campjs.com/fonts/sg12-webfont.eot);
+  src: url(http://vii.campjs.com/fonts/sg12-webfont.eot?#iefix) format('embedded-opentype'),url(http://vii.campjs.com/fonts/sg12-webfont.woff) format('woff'),url(http://vii.campjs.com/fonts/sg12-webfont.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
 body {
   background: #FFF;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #6a6271;
+  font-family: "Source Code Pro", monospace;
   font-size: 1.6rem;
+  line-height: 1.5;
   padding: 5.5rem 0;
 }
 
-a {
-  color: #e24b3b;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
-a:hover {
-  color: #e97467;
+p {
+  margin: 0 0 24px;
+}
+
+a {
+  color: #bcce46;
+}
+
+a:hover,
+a:focus {
+  color: #D5E853;
 }
 
 .dashboard {
@@ -18,7 +52,7 @@ a:hover {
 }
 
 .header {
-  background: #e24b3b;
+  background: #bcce46;
   color: #FFF;
   padding: 6rem 0;
 }
@@ -47,19 +81,19 @@ a:hover {
 }
 
 .section--primary {
-  background: #e24b3b;
+  background: #6a6271;
   color: #FFF;
 }
 
 .section--light {
   background: #EEE;
-  color: #7e8690;
+  color: #555;
 }
 
 .headline {
   margin: 0.75rem 0;
   padding: 0.5rem 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 .headline--alpha {
@@ -140,21 +174,21 @@ a:hover {
  */
 .btn-opencfp--primary {
   background: #FFF;
-  color: #e24b3b;
+  color: #bcce46;
 }
 
 .btn-opencfp--primary:hover {
   background: #F7F7F7;
-  color: #e24b3b;
+  color: #bcce46;
 }
 
 .btn-opencfp--light {
-  background: #7e8690;
+  background: #6a6271;
   color: #FFF;
 }
 
 .btn-opencfp--light:hover {
-  background: #5c636c;
+  background: #5a5261;
   color: #FFF;
 }
 
@@ -166,7 +200,7 @@ a:hover {
 
 .btn-opencfp--outlined:hover {
   background: #FFF;
-  color: #e24b3b;
+  color: #bcce46;
 }
 
 .btn-opencfp--centered {
@@ -184,7 +218,7 @@ a:hover {
 }
 
 .module__header {
-  background: #e24b3b;
+  background: #bcce46;
   color: #FFF;
   padding: 1rem 2rem;
 }
@@ -235,15 +269,15 @@ a:hover {
 }
 
 .tile-talks {
-  background: #1fa67a;
+  background: #bcce46;
 }
 
 .tile-favorites {
-  background: #ffb848;
+  background: #00abef;
 }
 
 .tile-selected {
-  background: #852b99;
+  background: #fd9700;
 }
 
 .comment-box {
@@ -301,12 +335,12 @@ a:hover {
 .primary-text,
 .megaphone-cover,
 .megaphone-end {
-  fill: #e24b3b;
+  fill: #bcce46;
 }
 
 .base-text,
 .megaphone-base {
-  fill: #EEEEEE;
+  fill: #fff;
 }
 
 .event-logo {
@@ -318,7 +352,7 @@ a:hover {
 }
 
 .admin-icon--selected {
-  color: #f49c2c;
+  color: #00abef;
 }
 
 .fa-thumbs-up.admin-icon--selected {
@@ -330,7 +364,7 @@ a:hover {
 }
 
 .fa-check-square.admin-icon--selected {
-  color: #852b99;
+  color: #fd9700;
 }
 
 .sort {
@@ -384,7 +418,7 @@ a:hover {
 }
 
 .navbar-opencfp {
-  background: #374146;
+  background: #6a6271;
 }
 
 .navbar-collapse {
@@ -392,10 +426,10 @@ a:hover {
 }
 
 .navbar-opencfp .navbar-nav > li > a,
-.navbar-opencfp .navbar-nav .dropdown-menu > li > a{
-  border-top: 3px solid transparent;
+.navbar-opencfp .navbar-nav .dropdown-menu > li > a {
   color: #FFF;
-  -webkit-transition: border .2s ease-in-out;
+  border: 0;
+  -webkit-transition: background .2s ease-in-out;
 }
 
 .navbar-opencfp .navbar-nav > li > a:hover,
@@ -408,8 +442,7 @@ a:hover {
 .navbar-opencfp .nav .open>a:hover,
 .navbar-opencfp .nav .open>a:focus
 {
-  background: none;
-  border-color: #e24b3b;
+  background: #bcce46;
 }
 
 .navbar-opencfp .navbar-toggle {
@@ -456,4 +489,82 @@ a:hover {
 .icon-12 {
   height: 12px;
   width: 12px;
+}
+
+/* Custom SVG */
+
+[fill="#110000"],
+[fill="#FF7674"] {
+  fill: #bcce46;
+}
+
+[stroke="#000000"] {
+  stroke: #bcce46;
+}
+
+/* Overwrite BS */
+
+.btn-success {
+  background-color: #bcce46;
+  border-radius: 0;
+  border: 0;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #bcce46;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  box-shadow: 0 0 8px rgba(0,0,0,.15);
+}
+
+.form-control {
+  border-radius: 0;
+  border: 2px solid #6a6271;
+}
+
+.input-group-addon {
+  border: 2px solid transparent;
+  background-color: #6a6271;
+  color: #fff;
+  border-radius: 0 !important;
+}
+
+.input-group-addon > svg {
+  fill: currentColor !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #bcce46;
+}
+
+.navbar svg {
+  display: none;
+}
+
+.navbar a {
+  padding: 0.95rem 0 0;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  text-decoration: none !important;
+}
+
+.navbar .logo {
+  font-family: "SG", "Source Code Pro", Input, Hack, Consolas, monaco, monospace;
+}
+
+.navbar .logo:after {
+  content: 'CAMPJS CFP';
+  font-size: 3.3rem;
+  line-height: 1;
+}
+
+.navbar {
+    border: 0;
 }
